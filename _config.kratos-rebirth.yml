@@ -1,0 +1,77 @@
+# 主题配置文件覆盖
+
+# 站点背景
+image:
+  background:
+    light: "/images/background/bg.webp"
+    dark: "/images/background/bg.webp"
+  banner:
+    light: "/images/background/banner.webp"
+    dark: "/images/background/banner_dark.webp"
+  favicon: ""
+  about:
+    light: "/images/default.webp"
+    dark: "/images/default.webp"
+
+# 侧边栏
+sidebar:
+  location: right
+  widgets:
+    - about
+    - splitter
+    - category
+    - tagcloud
+    - posts
+
+# 导航栏
+nav:
+  auto_hide: true
+  items:
+    - label: 首页
+      icon: fa-home
+      url: /
+    - label: 归档
+      icon: fa-archive
+      url: /archives
+    - label: 关于
+      icon: fa-info-circle
+      url: /about
+
+# 页脚
+footer:
+  components:
+    uptime:
+      since: "2026/05/19 20:00:00"
+      text: "本站已运行"
+    author:
+      homepage: "https://guhualin.com"
+    additional:
+      - <a href="https://guhualin.com" target="_blank" rel="nofollow">一诺</a>
+
+# 文章配置
+posts:
+  default_cover: "/images/default.webp"
+
+# 版权
+copyright_notice:
+  in_page:
+    enable_at:
+      - post
+      - page
+  append_copy:
+    enable: true
+    threshold: 150
+
+# 额外样式注入
+additional_injections:
+  head: |
+    <style>
+      body.custom-background {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        background-attachment: fixed !important;
+      }
+      html[data-theme="dark"] body.custom-background {
+        background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%) !important;
+        background-attachment: fixed !important;
+      }
+    </style>
