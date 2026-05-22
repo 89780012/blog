@@ -1,6 +1,4 @@
-# 主题配置文件覆盖
-
-# 站点背景
+# 站点背景与图标
 image:
   background:
     light: "/images/background/bg.webp"
@@ -8,7 +6,7 @@ image:
   banner:
     light: "/images/background/banner.webp"
     dark: "/images/background/banner_dark.webp"
-  favicon: ""
+  favicon: "/images/favicon.svg"
   about:
     light: "/images/default.webp"
     dark: "/images/default.webp"
@@ -61,17 +59,3 @@ copyright_notice:
   append_copy:
     enable: true
     threshold: 150
-
-# 额外样式注入
-additional_injections:
-  head: |
-    <style>
-      body.custom-background {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-        background-attachment: fixed !important;
-      }
-      html[data-theme="dark"] body.custom-background {
-        background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%) !important;
-        background-attachment: fixed !important;
-      }
-    </style>

@@ -103,14 +103,3 @@ theme: kratos-rebirth
 deploy:
   type: ''
 
-# Kratos-Rebirth 主题配置
-theme_config:
-  image:
-    background:
-      light: "/images/background/bg.webp"
-      dark: "/images/background/bg.webp"
-    banner:
-      light: "/images/background/banner.webp"
-      dark: "/images/background/banner_dark.webp"
-  additional_injections:
-    head: ""
